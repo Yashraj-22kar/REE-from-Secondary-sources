@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secondary Sources for Rare Earth Element Recovery — Strategic Report 2025</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --ink:       #0D1117;
+    --paper:     #F7F6F2;
+    --mid:       #E8E6DF;
+    --muted:     #7A7870;
+    --accent:    #C4451B;          /* molten-metal orange-red */
+    --accent2:   #1B5E8A;          /* deep mineral blue */
+    --accent3:   #3A7D44;          /* recycle green */
+    --accent4:   #7B2D8B;          /* rare-earth violet */
+    --gold:      #B8860B;
+    --white:     #FFFFFF;
+    --row-alt:   #F0EEE8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* ── COVER ── */
+  .cover {
+    background: var(--ink);
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 56px 72px 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    top: -120px; right: -120px;
+    width: 560px; height: 560px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(196,69,27,0.28) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: -80px;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(27,94,138,0.22) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .cover-eyebrow {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .cover-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(40px, 6vw, 76px);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-top: 32px;
+    max-width: 860px;
+  }
+  .cover-title span { color: var(--accent); }
+  .cover-sub {
+    font-size: 17px;
+    color: rgba(255,255,255,0.62);
+    margin-top: 18px;
+    max-width: 600px;
+    font-weight: 300;
+  }
+  .cover-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    margin-top: 56px;
+  }
+  .cover-stat {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.09);
+    padding: 22px 20px;
+  }
+  .cover-stat .val {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .cover-stat .lbl {
+    font-size: 11px;
+    color: rgba(255,255,255,0.50);
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+  .cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.06em;
+  }
+
+  /* ── NAV ── */
+  .toc {
+    background: var(--ink);
+    color: var(--white);
+    padding: 56px 72px;
+    page-break-after: always;
+  }
+  .toc h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 32px;
+  }
+  .toc-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .toc-list li {
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding: 12px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    font-size: 14px;
+  }
+  .toc-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    color: var(--accent);
+    min-width: 28px;
+  }
+
+  /* ── CONTENT ── */
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 72px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--accent);
+  }
+  .section-num {
+    font-family: 'Syne', sans-serif;
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--mid);
+    line-height: 1;
+    min-width: 70px;
+  }
+  .section-meta { flex: 1; }
+  .section-tag {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .section-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+  .section-subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  /* ── CARDS ── */
+  .card-grid {
+    display: grid;
+    gap: 16px;
+  }
+  .card-grid-2 { grid-template-columns: 1fr 1fr; }
+  .card-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--mid);
+    padding: 24px;
+  }
+  .card-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+  .card-value {
+    font-family: 'Syne', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .card-desc { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  .accent-card {
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+  }
+  .accent-card .card-label { color: rgba(255,255,255,0.65); }
+  .accent-card .card-value { color: var(--white); }
+  .accent-card .card-desc { color: rgba(255,255,255,0.75); }
+
+  .blue-card { background: var(--accent2); color: var(--white); border: none; }
+  .blue-card .card-label { color: rgba(255,255,255,0.65); }
+  .blue-card .card-value { color: var(--white); }
+  .blue-card .card-desc { color: rgba(255,255,255,0.75); }
+
+  /* ── PROCESS BOX ── */
+  .process-box {
+    background: var(--ink);
+    color: var(--white);
+    padding: 32px 36px;
+    margin: 28px 0;
+  }
+  .process-box h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 16px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .process-steps {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+  }
+  .step {
+    flex: 1;
+    padding: 16px 20px;
+    border-right: 1px solid rgba(255,255,255,0.12);
+    min-width: 120px;
+  }
+  .step:last-child { border-right: none; }
+  .step-n {
+    font-family: 'Syne', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+    line-height: 1;
+  }
+  .step-title {
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 8px;
+    color: var(--white);
+  }
+  .step-detail {
+    font-size: 11px;
+    color: rgba(255,255,255,0.52);
+    margin-top: 4px;
+  }
+
+  /* ── DATA TABLE ── */
+  .data-table-wrap { overflow-x: auto; margin: 24px 0; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    background: var(--ink);
+    color: var(--white);
+    padding: 12px 14px;
+    text-align: left;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  tbody tr:nth-child(even) { background: var(--row-alt); }
+  tbody tr:hover { background: #E0DDD4; }
+  tbody td {
+    padding: 11px 14px;
+    border-bottom: 1px solid var(--mid);
+    vertical-align: top;
+  }
+  .td-key {
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .td-val {
+    font-family: 'Syne', sans-serif;
+    font-weight: 600;
+    color: var(--accent);
+  }
+  .td-pct {
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+
+  /* ── BAR ── */
+  .bar-chart { margin: 28px 0; }
+  .bar-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+  }
+  .bar-label { width: 160px; font-size: 12px; font-weight: 500; flex-shrink: 0; }
+  .bar-track { flex: 1; background: var(--mid); height: 20px; position: relative; }
+  .bar-fill {
+    height: 100%;
+    position: absolute; left: 0; top: 0;
+    transition: width 1s ease;
+  }
+  .bar-num { width: 70px; font-family:'Syne',sans-serif; font-size:12px; font-weight:700; text-align:right; }
+
+  /* ── COMPETITOR TABLE ── */
+  .comp-table table thead th { background: var(--accent2); }
+
+  /* ── CALLOUT ── */
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: rgba(196,69,27,0.06);
+    padding: 16px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  .callout strong { color: var(--accent); }
+
+  .callout-green {
+    border-left-color: var(--accent3);
+    background: rgba(58,125,68,0.06);
+  }
+  .callout-green strong { color: var(--accent3); }
+
+  .callout-blue {
+    border-left-color: var(--accent2);
+    background: rgba(27,94,138,0.06);
+  }
+  .callout-blue strong { color: var(--accent2); }
+
+  /* ── DIVIDER ── */
+  .section-divider {
+    height: 6px;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent2) 100%);
+    margin: 60px 0 0;
+  }
+
+  /* ── TYPOGRAPHY ── */
+  h2.prose { font-family:'Syne',sans-serif; font-size:20px; font-weight:700; margin:32px 0 12px; }
+  h3.prose { font-family:'Syne',sans-serif; font-size:16px; font-weight:600; margin:24px 0 8px; color:var(--accent2); }
+  p.prose { font-size:14.5px; line-height:1.7; margin-bottom:12px; color:#2A2924; }
+  p.prose + p.prose { margin-top:8px; }
+
+  /* ── COMPETITOR CARD ── */
+  .comp-card {
+    border: 1px solid var(--mid);
+    padding: 20px;
+    background: var(--white);
+  }
+  .comp-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .comp-country {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+  .comp-focus {
+    margin-top: 10px;
+    font-size: 12.5px;
+    line-height: 1.55;
+  }
+  .tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-right: 4px;
+    margin-top: 6px;
+    letter-spacing: 0.06em;
+  }
+  .tag-red { background: rgba(196,69,27,0.12); color: var(--accent); }
+  .tag-blue { background: rgba(27,94,138,0.12); color: var(--accent2); }
+  .tag-green { background: rgba(58,125,68,0.12); color: var(--accent3); }
+  .tag-purple { background: rgba(123,45,139,0.12); color: var(--accent4); }
+
+  /* ── MARKET SIZE BAR ── */
+  .mkt-bar {
+    height: 8px;
+    background: var(--mid);
+    border-radius: 0;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+  .mkt-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent2), var(--accent));
+  }
+
+  /* ── FOOTER ── */
+  .report-footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.35);
+    text-align: center;
+    padding: 32px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    margin-top: 80px;
+  }
+
+  @media print {
+    .section-divider { break-before: page; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════ COVER ══════════════ -->
+<div class="cover">
+  <div>
+    <div class="cover-eyebrow">Strategic Research Report · June 2026</div>
+    <h1 class="cover-title">
+      Urban Mining &amp;<br>
+      <span>Secondary Source</span><br>
+      Recovery of Rare<br>
+      Earth Elements
+    </h1>
+    <p class="cover-sub">
+      A data-packed analysis of recycling pathways for heavy and light rare earth elements from tin-coated copper, NdFeB magnets, fluorescent lamp phosphors, and Ni-MH batteries — with Asia-Pacific competitor intelligence and live market values.
+    </p>
+  </div>
+
+  <div class="cover-stats">
+    <div class="cover-stat">
+      <div class="val">$7 Bn</div>
+      <div class="lbl">Global REE market 2024</div>
+    </div>
+    <div class="cover-stat">
+      <div class="val">$930/kg</div>
+      <div class="lbl">Dysprosium spot (Jun 2026)</div>
+    </div>
+    <div class="cover-stat">
+      <div class="val">$4,029/kg</div>
+      <div class="lbl">Terbium spot (Jun 2026)</div>
+    </div>
+    <div class="cover-stat">
+      <div class="val">&lt;2%</div>
+      <div class="lbl">Current global REE recycling rate</div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <span>CONFIDENTIAL · FOR INTERNAL USE</span>
+    <span>SECTIONS: TIN · MAGNETS · FLUORESCENT LAMPS · Ni-MH BATTERIES</span>
+  </div>
+</div>
+
+<!-- ══════════════ TABLE OF CONTENTS ══════════════ -->
+<div class="toc">
+  <h2>Contents</h2>
+  <ul class="toc-list">
+    <li><span class="toc-num">01</span> Executive Summary &amp; Market Overview</li>
+    <li><span class="toc-num">02</span> Tin Recovery from Tin-Coated Copper</li>
+    <li><span class="toc-num">03</span> Neodymium from Hard Disks &amp; Electronics</li>
+    <li><span class="toc-num">04</span> NdFeB Magnet Smelting: Nd, Dy, Pr Extraction</li>
+    <li><span class="toc-num">05</span> Fluorescent Lamp Phosphors: Y, Eu, Tb</li>
+    <li><span class="toc-num">06</span> Ni-MH Batteries: La, Ce, Nd, Pr</li>
+    <li><span class="toc-num">07</span> Asia-Pacific Competitor Landscape</li>
+    <li><span class="toc-num">08</span> Element Market Data &amp; Pricing Summary</li>
+  </ul>
+</div>
+
+<!-- ══════════════ SECTION 01 — EXECUTIVE SUMMARY ══════════════ -->
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div class="section-meta">
+      <span class="section-tag">Overview</span>
+      <div class="section-title">Executive Summary &amp; Market Context</div>
+      <div class="section-subtitle">Why secondary sources are the critical unlock for rare earth supply chains</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">REE Recycling Market 2025</div>
+      <div class="card-value">$588M – $2.85Bn</div>
+      <div class="card-desc">Range across analyst estimates (Straits Research / Grand Research); growing at 7–17% CAGR through 2032</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">China's Supply Dominance</div>
+      <div class="card-value">80–90%</div>
+      <div class="card-desc">Share of global REE mining and refining; export restrictions in Apr &amp; Oct 2025 reshaped global pricing overnight</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Demand Growth Drivers</div>
+      <div class="card-value">EVs &amp; Wind</div>
+      <div class="card-desc">17M EVs sold in 2024, each consuming 1–2 kg of NdFeB magnet material. 117 GW of wind added in 2024</div>
+    </div>
+  </div>
+
+  <h2 class="prose">The Case for Urban Mining</h2>
+  <p class="prose">Rare earth elements (REEs) are indispensable to virtually every clean-energy and advanced-electronics system. Yet fewer than 2% of REEs in end-of-life products are currently recovered. With China imposing export licensing requirements on neodymium, praseodymium, dysprosium, and terbium in April 2025, and expanding controls to five additional elements in October 2025, the urgency to develop secondary supply chains has become acute.</p>
+
+  <p class="prose">This report examines five distinct secondary source streams: (1) tin recovered from tin-coated copper scrap, (2) neodymium from hard disk drives and consumer electronics, (3) neodymium, dysprosium, and praseodymium from NdFeB permanent magnets, (4) yttrium, europium, and terbium from fluorescent lamp phosphors, and (5) lanthanum, cerium, neodymium, and praseodymium from nickel-metal hydride batteries. Each section documents extraction processes, elemental composition and yield percentages, market values, and the competitive landscape in Asia-Pacific.</p>
+
+  <div class="callout">
+    <strong>Strategic Opportunity:</strong> By 2035, up to 25% of global REE demand could be met through recycling if adequate collection and processing infrastructure is established. Heavy REEs (dysprosium, terbium, yttrium) — where China's grip is tightest — represent the highest-value opportunity for secondary recovery.
+  </div>
+
+  <h2 class="prose">Global Secondary Source Landscape</h2>
+
+  <div class="bar-chart">
+    <div class="bar-row">
+      <div class="bar-label">NdFeB Magnets</div>
+      <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--accent);"></div></div>
+      <div class="bar-num" style="color:var(--accent);">$4.1Bn est.</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Ni-MH Batteries</div>
+      <div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--accent2);"></div></div>
+      <div class="bar-num" style="color:var(--accent2);">$1.6Bn est.</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Fluorescent Lamps</div>
+      <div class="bar-track"><div class="bar-fill" style="width:28%;background:var(--accent3);"></div></div>
+      <div class="bar-num" style="color:var(--accent3);">$520M est.</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Tin-Coated Copper</div>
+      <div class="bar-track"><div class="bar-fill" style="width:22%;background:var(--gold);"></div></div>
+      <div class="bar-num" style="color:var(--gold);">$320M est.</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Hard Disk Drives</div>
+      <div class="bar-track"><div class="bar-fill" style="width:12%;background:var(--accent4);"></div></div>
+      <div class="bar-num" style="color:var(--accent4);">$145M est.</div>
+    </div>
+  </div>
+  <p style="font-size:11px;color:var(--muted);">Note: Market estimates for secondary stream potential based on aggregate industry data and element pricing. Not published figures for recycled output alone.</p>
+</div>
+
+<!-- ══════════════ SECTION 02 — TIN ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div class="section-meta">
+      <span class="section-tag">Secondary Metal Recovery</span>
+      <div class="section-title">Tin Recovery from Tin-Coated Copper Scrap</div>
+      <div class="section-subtitle">The "vapour loss" problem and how capturing it creates a dominant supply position</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">Global Refined Tin Production 2024</div>
+      <div class="card-value">371,200 t</div>
+      <div class="card-desc">Down 2.7% from 2023. Secondary supply grew 6.8% to a record high</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Tin Spot Price (Jun 2026)</div>
+      <div class="card-value">~$31,000/t</div>
+      <div class="card-desc">Highly volatile; solder accounts for ~51% of global tin usage</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">APAC Tin Consumption Share</div>
+      <div class="card-value">&gt;65%</div>
+      <div class="card-desc">Asia-Pacific absorbs ~70% of refined tin production, led by China's electronics complex</div>
+    </div>
+  </div>
+
+  <h2 class="prose">The Vapour-Loss Problem in Copper Smelting</h2>
+  <p class="prose">When tin-coated copper is smelted to recover copper, tin behaves in a fundamentally different way from copper. Under standard pyrometallurgical conditions, tin oxide (SnO₂) — formed from the tin coating — is reduced to metallic tin and partially dissolves into the copper-lead bullion. However, if conditions are insufficiently reducing, or temperatures surge, tin volatilises as stannous oxide (SnO) fumes and escapes in the off-gas stream. This "vapour loss" renders the tin unrecoverable in most conventional smelters.</p>
+
+  <p class="prose">Industrial smelters mitigate losses by operating under slightly reducing conditions and capturing furnace off-gases, but this is rarely optimised for maximum tin yield. Printed circuit boards contain on average 3% tin (as solder), representing a huge reservoir of secondary tin. Asia generates 48% of global e-waste by mass — the single largest secondary tin feedstock pool on earth.</p>
+
+  <div class="process-box">
+    <h3>Tin Recovery Process from Tin-Coated Copper Scrap</h3>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Shredding &amp; Sorting</div>
+        <div class="step-detail">Mechanical separation of Cu-Sn scrap from plastics, steel, Al</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Desoldering / Heat Treatment</div>
+        <div class="step-detail">300–400°C melts solder joints; tin–lead alloy collected separately</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Smelting in TBRC</div>
+        <div class="step-detail">Top-blown rotary converter; controlled reducing atmosphere keeps tin in metal phase</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Off-Gas Capture</div>
+        <div class="step-detail">Baghouse filtration captures SnO fumes as tin-rich dust; re-processed</div>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <div class="step-title">Converting Slag Reduction</div>
+        <div class="step-detail">Blister copper oxidation transfers Sn, Pb to slag; crude mixed tin extracted from slag</div>
+      </div>
+      <div class="step">
+        <div class="step-n">06</div>
+        <div class="step-title">Tin Refining</div>
+        <div class="step-detail">Electrolytic or fire-refining yields 99.9%+ Sn metal ingots</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">Strategic Opportunity: The Vapour-Capture Advantage</h2>
+  <p class="prose">By installing purpose-built off-gas capture systems (venturi scrubbers + baghouse filters) on existing copper smelters that process tin-coated copper, secondary tin recovery can be improved from an industry-average of ~60% to over 90%. The tin-rich oxide dust collected in bag filters can be reprocessed in a dedicated slag fuming furnace or sold to specialist tin smelters (e.g., Malaysia Smelting Corporation, Thaisarco).</p>
+
+  <div class="callout callout-green">
+    <strong>Market Positioning:</strong> If a single integrated facility processes India's e-waste stream (India generates ~3.2 million tonnes/year) with optimised tin capture, recovering even 50% of the tin content from PCBs (~1.5 kg per tonne), this equates to ~2,400 tonnes of tin per year — placing it among the top-20 secondary tin producers globally at current prices (~$74M/year in tin value alone).
+  </div>
+
+  <h3 class="prose">Key Technology Approaches</h3>
+
+  <div class="card-grid card-grid-2">
+    <div class="card">
+      <div class="card-label">Pyrometallurgical Route</div>
+      <div class="card-value" style="font-size:18px;">TBRC + Slag Fuming</div>
+      <div class="card-desc">Top-blown rotary converter under reducing gas. Tin collects in metal bullion. Slag fuming step extracts remaining Sn from SnO-rich slag using carbon reductant at 1200–1400°C. Recovery: 85–92% of tin input. Best for high-volume mixed scrap.</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Hydrometallurgical Route</div>
+      <div class="card-value" style="font-size:18px;">HCl / H₂SO₄ Leaching</div>
+      <div class="card-desc">Selective dissolution of tin from copper substrate using hydrochloric or sulfuric acid. Tin precipitated as SnO₂ or electrodeposited as pure metal. Recovery: 90–96% of tin. Best for low-volume, high-purity applications (food-grade tinplate recycling).</div>
+    </div>
+  </div>
+
+  <h2 class="prose">Tin Market Overview</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>2024 Data</th>
+          <th>Trend / Note</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Global Refined Production</td>
+          <td class="td-val">371,200 t</td>
+          <td>Down 2.7%; China +4.6% via secondary growth</td>
+        </tr>
+        <tr>
+          <td class="td-key">Largest Primary Producer</td>
+          <td>Yunnan Tin (China)</td>
+          <td>85,000 t — world's largest single producer</td>
+        </tr>
+        <tr>
+          <td class="td-key">Secondary Supply Growth</td>
+          <td class="td-val">+6.8%</td>
+          <td>Record high in 2024; China secondary +14.9%</td>
+        </tr>
+        <tr>
+          <td class="td-key">APAC Consumption Share</td>
+          <td class="td-val">&gt;65%</td>
+          <td>~70% of refined tin production also in APAC</td>
+        </tr>
+        <tr>
+          <td class="td-key">Solder Application Share</td>
+          <td class="td-val">~51%</td>
+          <td>Dominant use; directly tied to PCB/electronics volume</td>
+        </tr>
+        <tr>
+          <td class="td-key">Tin in PCBs (average)</td>
+          <td class="td-val">~3 wt%</td>
+          <td>Primarily as tin-lead or SAC (Sn-Ag-Cu) solder</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="comp-table">
+    <h2 class="prose">Asia-Pacific Tin Competitor Landscape</h2>
+    <div class="data-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Focus</th>
+            <th>2024 Production / Capacity</th>
+            <th>Secondary Tin Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-key">Yunnan Tin Group</td>
+            <td>China</td>
+            <td>Primary + secondary smelting</td>
+            <td class="td-val">85,000 t</td>
+            <td>World's largest; aggressively expanding secondary via e-waste</td>
+          </tr>
+          <tr>
+            <td class="td-key">PT Timah</td>
+            <td>Indonesia</td>
+            <td>Primary mining &amp; smelting</td>
+            <td class="td-val">~26,000 t</td>
+            <td>Limited secondary; primarily cassiterite mining</td>
+          </tr>
+          <tr>
+            <td class="td-key">Malaysia Smelting Corp (MSC)</td>
+            <td>Malaysia</td>
+            <td>Refining &amp; secondary</td>
+            <td>Top-5 global</td>
+            <td>Major secondary tin recycler; processes e-waste solders</td>
+          </tr>
+          <tr>
+            <td class="td-key">Thaisarco</td>
+            <td>Thailand</td>
+            <td>Smelting &amp; refining</td>
+            <td>~10,000 t</td>
+            <td>Processes mixed secondary feeds; significant in ASEAN</td>
+          </tr>
+          <tr>
+            <td class="td-key">Yunnan Chengfeng</td>
+            <td>China</td>
+            <td>Primary + secondary</td>
+            <td>Top-3 China</td>
+            <td>Integrated with Chinese e-waste collection networks</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 03 — NEODYMIUM FROM HDD ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div class="section-meta">
+      <span class="section-tag">Hard Disk Drives &amp; Consumer Electronics</span>
+      <div class="section-title">Neodymium from Hard Disks, Spectacles &amp; Consumer Devices</div>
+      <div class="section-subtitle">The e-waste route to neodymium recovery: composition, yields, and economics</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">Nd Price (Jun 2026 spot)</div>
+      <div class="card-value">~$245/kg</div>
+      <div class="card-desc">+64% year-to-date; +277% since Jan 2020; China export controls driving surge</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Nd Content in HDD</div>
+      <div class="card-value">~0.2 wt%</div>
+      <div class="card-desc">HDDs contain Al (84.9%), Fe (11.9%), Cu (2.9%), Nd (0.2%) — small magnet, large volume opportunity</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">Neodymium Market Size (2025)</div>
+      <div class="card-value">~$2.1Bn</div>
+      <div class="card-desc">~30% share of global REE market value; dominant application is NdFeB magnets</div>
+    </div>
+  </div>
+
+  <h2 class="prose">Neodymium in Hard Disk Drives</h2>
+  <p class="prose">Every hard disk drive (HDD) contains one or more small NdFeB permanent magnets — typically 3–10 grams each — embedded in the voice coil actuator assembly. Despite the small mass per unit, the sheer volume of HDDs discarded globally (hundreds of millions per year as SSDs displace them) makes HDDs a significant secondary source of neodymium. A single tonne of HDD magnets contains approximately 200–300 kg of rare earth oxides.</p>
+
+  <p class="prose">Consumer spectacle frames made with neodymium-doped glass (to improve colour and optical clarity) and neodymium-based alloys for lightweight frames are another emerging secondary source, though the concentration is lower and collection more dispersed.</p>
+
+  <div class="process-box">
+    <h3>Neodymium Extraction Process from HDDs</h3>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Manual Disassembly</div>
+        <div class="step-detail">HDDs opened; voice coil actuator and spindle motor extracted</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Demagnetisation</div>
+        <div class="step-detail">Heating to 300–600°C in a furnace destroys magnetic properties; safe to handle</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Grinding / Crushing</div>
+        <div class="step-detail">Planetary mill with WC balls; ethanol medium; 2–10 μm particle size target</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Acid Leaching</div>
+        <div class="step-detail">HCl or HNO₃ dissolves magnet; Fe removed via pH adjustment (Fe(OH)₃ precipitation)</div>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <div class="step-title">Solvent Extraction</div>
+        <div class="step-detail">D2EHPA or Cyanex 302 selectively extracts Nd from iron-stripped liquor</div>
+      </div>
+      <div class="step">
+        <div class="step-n">06</div>
+        <div class="step-title">Stripping &amp; Precipitation</div>
+        <div class="step-detail">HCl or H₂SO₄ strips Nd; oxalate precipitation; calcination yields Nd₂O₃ or Nd metal</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">REE Composition of HDD Magnets</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Typical wt% in Magnet</th>
+          <th>Recovery Rate (Optimised Process)</th>
+          <th>Value at Jun 2026 Prices</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Neodymium (Nd)</td>
+          <td class="td-pct">~29–33%</td>
+          <td>63–95% (via D2EHPA SX)</td>
+          <td class="td-val">~$245/kg Nd metal</td>
+        </tr>
+        <tr>
+          <td class="td-key">Praseodymium (Pr)</td>
+          <td class="td-pct">~3–5%</td>
+          <td>56–85% (via HFSLM)</td>
+          <td class="td-val">~$100/kg Pr metal</td>
+        </tr>
+        <tr>
+          <td class="td-key">Dysprosium (Dy)</td>
+          <td class="td-pct">~0.5–2%</td>
+          <td>15–98% (Dy SX with EHEHPA)</td>
+          <td class="td-val">~$930/kg Dy metal</td>
+        </tr>
+        <tr>
+          <td class="td-key">Iron (Fe)</td>
+          <td class="td-pct">~61–67%</td>
+          <td>Removed into slag / hydroxide</td>
+          <td>Low value; scrap iron</td>
+        </tr>
+        <tr>
+          <td class="td-key">Boron (B)</td>
+          <td class="td-pct">~1–1.2%</td>
+          <td>Lost to slag in most processes</td>
+          <td>Minimal recovery value</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout callout-blue">
+    <strong>Research Breakthrough (Feb 2024):</strong> Researchers at Pacific Northwest National Laboratory, in collaboration with the University of Washington, achieved separation of neodymium and dysprosium from e-waste within just 4 hours — compared to the conventional 30-hour process — using advanced chelating agents. This 7.5× throughput improvement dramatically changes the economics of HDD recycling.
+  </div>
+
+  <h2 class="prose">Neodymium Market Intelligence</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>Data</th><th>Source / Note</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-key">Global market share of REE value</td><td class="td-pct">~30.3%</td><td>Largest single REE by market value, 2025</td></tr>
+        <tr><td class="td-key">NdPr oxide price (Dec 2024)</td><td class="td-val">$55–57/kg</td><td>Fastmarkets; down 9% from Jan 2024 start</td></tr>
+        <tr><td class="td-key">NdPr price surge (late 2025)</td><td class="td-val">+40% YTD</td><td>China export restrictions Apr 2025 impact</td></tr>
+        <tr><td class="td-key">Nd demand from EVs (by 2035)</td><td>50,000–100,000 t NdO equiv.</td><td>If 50M EVs/year at 1–2 kg NdFeB each</td></tr>
+        <tr><td class="td-key">Magnet-to-magnet recycling target</td><td>&gt;10% supply by 2030</td><td>NdFeB sintered magnet recycling forecasts</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 04 — NdFeB MAGNETS ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div class="section-meta">
+      <span class="section-tag">Permanent Magnet Recycling</span>
+      <div class="section-title">NdFeB Magnet Smelting: Nd, Dy &amp; Pr by % Weight</div>
+      <div class="section-subtitle">Composition breakdown, recovery yields, and which magnet types to target</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">Dysprosium Price (Jun 2026)</div>
+      <div class="card-value">$930.70/kg</div>
+      <div class="card-desc">+105% YTD; +163% since Jan 2025; +170% since Jan 2020. China controls >90% of Dy supply</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">Terbium Price (Jun 2026)</div>
+      <div class="card-value">$4,028.50/kg</div>
+      <div class="card-desc">+103% YTD; +188% since Jan 2025. Structural shortage projected through early 2030s</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Dysprosium Market 2025</div>
+      <div class="card-value">$756.78M</div>
+      <div class="card-desc">Growing at 5.8% CAGR to $1.12Bn by 2032; >40% of demand from permanent magnets</div>
+    </div>
+  </div>
+
+  <h2 class="prose">NdFeB Magnet Composition — The Feedstock Profile</h2>
+  <p class="prose">NdFeB (neodymium-iron-boron) permanent magnets form the intermetallic compound Nd₂Fe₁₄B as their primary phase. They are composed of approximately 69% iron, 30% rare earth elements, and 1% boron by weight. The rare earth fraction is primarily neodymium, with praseodymium, dysprosium, and sometimes terbium added in varying quantities depending on the grade and application.</p>
+
+  <div class="card-grid card-grid-2" style="margin-bottom:24px;">
+    <div class="card">
+      <div class="card-label">Standard Grade NdFeB (e.g., N35–N52) — Consumer Electronics, HDDs</div>
+      <div style="margin-top:12px;">
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Neodymium (Nd)</div><div class="bar-track"><div class="bar-fill" style="width:63%;background:var(--accent);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent);">29–33%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Iron (Fe)</div><div class="bar-track"><div class="bar-fill" style="width:91%;background:#888;"></div></div><div class="bar-num" style="font-size:11px;">64–69%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Boron (B)</div><div class="bar-track"><div class="bar-fill" style="width:4%;background:#555;"></div></div><div class="bar-num" style="font-size:11px;">~1.1%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Dysprosium (Dy)</div><div class="bar-track"><div class="bar-fill" style="width:2%;background:var(--accent2);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent2);">0.6–2%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Praseodymium (Pr)</div><div class="bar-track"><div class="bar-fill" style="width:8%;background:var(--accent3);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent3);">3–5%</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-label">High-Coercivity Grade (e.g., SH/UH/EH) — EV Motors, Wind Turbines</div>
+      <div style="margin-top:12px;">
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Neodymium (Nd)</div><div class="bar-track"><div class="bar-fill" style="width:58%;background:var(--accent);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent);">25–30%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Iron (Fe)</div><div class="bar-track"><div class="bar-fill" style="width:89%;background:#888;"></div></div><div class="bar-num" style="font-size:11px;">60–65%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Boron (B)</div><div class="bar-track"><div class="bar-fill" style="width:4%;background:#555;"></div></div><div class="bar-num" style="font-size:11px;">~1.2%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Dysprosium (Dy)</div><div class="bar-track"><div class="bar-fill" style="width:18%;background:var(--accent2);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent2);">5–8%</div></div>
+        <div class="bar-row"><div class="bar-label" style="font-size:11px;">Praseodymium (Pr)</div><div class="bar-track"><div class="bar-fill" style="width:12%;background:var(--accent3);"></div></div><div class="bar-num" style="font-size:11px;color:var(--accent3);">4–7%</div></div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">Recovery Percentages by Weight — Hydrometallurgical Route</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Content in Magnet (wt%)</th>
+          <th>Extraction Yield</th>
+          <th>Recovery Yield (usable product)</th>
+          <th>Best Process</th>
+          <th>Price/kg (Jun 2026)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Neodymium (Nd)</td>
+          <td class="td-pct">25–35%</td>
+          <td class="td-pct">58.6–95%</td>
+          <td class="td-pct">63–95%</td>
+          <td>D2EHPA solvent extraction; Roasting + HCl leach</td>
+          <td class="td-val">~$245</td>
+        </tr>
+        <tr>
+          <td class="td-key">Dysprosium (Dy)</td>
+          <td class="td-pct">0.6–8%</td>
+          <td class="td-pct">95–98.5%</td>
+          <td class="td-pct">15–95%</td>
+          <td>EHEHPA (HFM-NDSX); Cyanex 302 at pH 0.5; D2EHPA pH 2</td>
+          <td class="td-val">~$930</td>
+        </tr>
+        <tr>
+          <td class="td-key">Praseodymium (Pr)</td>
+          <td class="td-pct">3–7%</td>
+          <td class="td-pct">85.6%</td>
+          <td class="td-pct">56–85%</td>
+          <td>HFSLM with D2EHPA; order Nd &gt; Pr &gt; Dy in transport</td>
+          <td class="td-val">~$100</td>
+        </tr>
+        <tr>
+          <td class="td-key">Terbium (Tb) [high-grade magnets]</td>
+          <td class="td-pct">0.1–1%</td>
+          <td class="td-pct">&gt;90%</td>
+          <td class="td-pct">&gt;85%</td>
+          <td>D2EHPA after Nd/Pr separation; co-extracted with Dy</td>
+          <td class="td-val">~$4,029</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p style="font-size:11px;color:var(--muted);margin-top:6px;">Recovery yield note: "Extraction yield" = % extracted into leach liquor; "Recovery yield" = % recovered as purified product. Gap reflects losses in SX/stripping stages. High-grade Dy separation (HFSLM/NDSX) achieves near-quantitative extraction but with lower transport coefficients for Dy vs Nd.</p>
+
+  <div class="process-box">
+    <h3>NdFeB Magnet Recycling Process — Pyrometallurgical + Hydrometallurgical</h3>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Collection &amp; Sorting</div>
+        <div class="step-detail">EV motors, wind turbines, HDDs, speakers — sorted by magnet grade</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Demagnetisation</div>
+        <div class="step-detail">300–600°C in muffle furnace; removes magnetic hazard</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Roasting</div>
+        <div class="step-detail">923–1273 K converts Nd₂Fe₁₄B; selective oxidation aids leaching</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">HCl Leaching</div>
+        <div class="step-detail">Fe removed as Fe(OH)₃ at pH 3–4; REE-rich liquor remains</div>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <div class="step-title">Dy Separation (Stage 1)</div>
+        <div class="step-detail">D2EHPA at pH 0.5–2; ~95% Dy extraction; Nd remains in raffinate</td></div>
+      </div>
+      <div class="step">
+        <div class="step-n">06</div>
+        <div class="step-title">Nd/Pr Separation (Stage 2)</div>
+        <div class="step-detail">D2EHPA at pH 4; A/O = 1; Nd stripped with HCl; Pr co-extracted</div>
+      </div>
+      <div class="step">
+        <div class="step-n">07</div>
+        <div class="step-title">Oxalate Precip. + Calcination</div>
+        <div class="step-detail">REE oxalates precipitated; calcined at 800°C to REE oxides (purity 98–99%+)</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">Source Magnets — Priority Targets for Recyclers</h2>
+  <div class="card-grid card-grid-3">
+    <div class="card">
+      <div class="card-label">EV Traction Motors</div>
+      <div class="card-value" style="font-size:18px;">1–2 kg NdFeB/motor</div>
+      <div class="card-desc">High-grade (SH/EH); 5–8% Dy content; highest Dy density per unit. 17M EVs sold in 2024 → ~20,000–34,000 t magnet material/year entering future waste stream</div>
+      <div style="margin-top:8px;"><span class="tag tag-red">HIGH Dy</span><span class="tag tag-blue">HIGH VALUE</span></div>
+    </div>
+    <div class="card">
+      <div class="card-label">Wind Turbine Generators</div>
+      <div class="card-value" style="font-size:18px;">600–1,000 kg/MW</div>
+      <div class="card-desc">Very high Nd/Pr tonnage per unit; 117 GW added globally in 2024. Direct-drive designs use more REE per MW than geared designs</div>
+      <div style="margin-top:8px;"><span class="tag tag-green">HIGH Nd VOLUME</span></div>
+    </div>
+    <div class="card">
+      <div class="card-label">HDD Actuators &amp; Spindle Motors</div>
+      <div class="card-value" style="font-size:18px;">3–10 g/HDD</div>
+      <div class="card-desc">Low-grade; standard NdFeB with 0–2% Dy. Hundreds of millions discarded/year; high collection density in data centres</div>
+      <div style="margin-top:8px;"><span class="tag tag-purple">HIGH VOLUME</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 05 — FLUORESCENT LAMPS ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div class="section-meta">
+      <span class="section-tag">Phosphor Recycling</span>
+      <div class="section-title">Y, Eu &amp; Tb from Fluorescent Lamp Phosphors</div>
+      <div class="section-subtitle">Each lamp contains 4–6 g of phosphor powder with 20–30% rare earth content — far richer than any natural ore</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">Terbium Price (Jun 2026)</div>
+      <div class="card-value">$4,028/kg</div>
+      <div class="card-desc">+503% since Jan 2020; China export controls on Tb since Apr 2025; structural shortage expected through 2032</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Europium Price (2025 ref.)</div>
+      <div class="card-value">~$1,600/kg</div>
+      <div class="card-desc">Stable but rising; critical for red phosphors and OLED emitters. China restricts export since 2025</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">Yttrium Oxide Market 2024</div>
+      <div class="card-value">$4.13Bn</div>
+      <div class="card-desc">Growing to $7.09Bn by 2033 at 6.2% CAGR; REE content per lamp (Y=28%, La=4.7%, Eu=1.9%, Tb=1.3%)</div>
+    </div>
+  </div>
+
+  <h2 class="prose">Fluorescent Lamp Phosphor — A High-Grade Secondary Ore</h2>
+  <p class="prose">Fluorescent lamps (CFLs and linear tubes) are coated internally with 4–6 grams of tri-band phosphor powder. This powder contains 20–30% rare earth oxides — a concentration that exceeds even the richest primary REE ores. Three primary phosphor systems are present in each lamp: (1) the red phosphor Y₂O₃:Eu³⁺ (YOX), which is easily dissolved in dilute acid; (2) the green phosphors LaPO₄:Ce³⁺,Tb³⁺ (LAP) and (Ce,Tb)MgAl₁₁O₁₉ (CAT), which are aluminate/phosphate matrices and more resistant to acid leaching; and (3) the blue phosphor BaMgAl₁₀O₁₇:Eu²⁺ (BAM).</p>
+
+  <p class="prose">Approximately 25,000 tonnes of rare earth-containing waste fluorescent lamp phosphors are stockpiled worldwide. India alone produced 500 million CFL units plus 250 million fluorescent tubes between 2014–2015. The phase-out of fluorescent lamps under energy efficiency regulations creates a predictable and growing waste stream ripe for organised collection.</p>
+
+  <h2 class="prose">Phosphor Composition — REE Concentrations</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>REE in Phosphor Powder</th>
+          <th>Content (wt% of phosphor)</th>
+          <th>Phosphor Phase Source</th>
+          <th>Leaching Difficulty</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Yttrium (Y)</td>
+          <td class="td-pct">~28 wt%</td>
+          <td>Y₂O₃:Eu³⁺ (YOX) — red phosphor</td>
+          <td>Easy — oxide readily dissolved in dilute H₂SO₄ or HCl</td>
+        </tr>
+        <tr>
+          <td class="td-key">Europium (Eu)</td>
+          <td class="td-pct">~1.9 wt%</td>
+          <td>YOX (red) + BAM (blue)</td>
+          <td>Moderate — co-extracted with Y; BAM needs stronger conditions</td>
+        </tr>
+        <tr>
+          <td class="td-key">Terbium (Tb)</td>
+          <td class="td-pct">~1.3 wt%</td>
+          <td>LAP / CAT (green phosphors)</td>
+          <td>Difficult — aluminate/phosphate matrices resist mild acid; needs thermal pre-treatment</td>
+        </tr>
+        <tr>
+          <td class="td-key">Lanthanum (La)</td>
+          <td class="td-pct">~4.7 wt%</td>
+          <td>LaPO₄:Ce,Tb (LAP) — green</td>
+          <td>Difficult — phosphate matrix</td>
+        </tr>
+        <tr>
+          <td class="td-key">Cerium (Ce)</td>
+          <td class="td-pct">~3.7 wt%</td>
+          <td>LAP (green phosphor)</td>
+          <td>Difficult — aluminate/phosphate</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="process-box">
+    <h3>Fluorescent Lamp Phosphor REE Recovery Process</h3>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Lamp Collection</div>
+        <div class="step-detail">Automated cutting; Hg contained; glass, metal end-caps separated</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Thermal Pre-treatment</div>
+        <div class="step-detail">Heating at 400–700°C (or KOH thermal pre-treatment) — breaks aluminate matrices; dramatically improves Tb leaching from 15% to 80%+</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Stage 1 Leaching (Mild Acid)</div>
+        <div class="step-detail">H₂SO₄ or HCl 0.5–1 M at 20–80°C; dissolves YOX (Y+Eu); 98–99% Y, 89–99% Eu into solution</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Stage 2 Leaching (Strong Acid)</div>
+        <div class="step-detail">HCl at elevated temp (96h) or thermal pre-treatment leach; 80% Tb recovery; LAP/CAT phases dissolved</div>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <div class="step-title">Y + Eu SX (Stage 1)</div>
+        <div class="step-detail">Cyanex 923 extracts Y; Cyanex 572 separates Eu; four-stage cross-flow SX; ≥94% initial purity</div>
+      </div>
+      <div class="step">
+        <div class="step-n">06</div>
+        <div class="step-title">Tb SX (Stage 2)</div>
+        <div class="step-detail">D2EHPA (15% v/v), 6-stage counter-current SX on residue leach; Tb₄O₇ precipitated at 99.8% purity</div>
+      </div>
+      <div class="step">
+        <div class="step-n">07</div>
+        <div class="step-title">Precipitation + Calcination</div>
+        <div class="step-detail">Oxalate/hydroxide precipitation; calcination at 900°C; REE oxides 98.62%+ purity</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">Recovery Rates — Best-Practice Benchmarks</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>From YOX (Red Phosphor) Yield</th>
+          <th>From Green Phosphor Yield</th>
+          <th>Combined Best Recovery</th>
+          <th>Price/kg (2025–2026)</th>
+          <th>Market Size</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Yttrium (Y)</td>
+          <td class="td-pct">99% (H₂SO₄ leach)</td>
+          <td>—</td>
+          <td class="td-pct">99%</td>
+          <td class="td-val">~$96/kg</td>
+          <td>$85.76M global (2024); CAGR 4.3%</td>
+        </tr>
+        <tr>
+          <td class="td-key">Europium (Eu)</td>
+          <td class="td-pct">89–99% (HNO₃/HCl)</td>
+          <td>50% (acetic acid)</td>
+          <td class="td-pct">97–99%</td>
+          <td class="td-val">~$1,600/kg</td>
+          <td>Niche; critical for OLED, phosphors</td>
+        </tr>
+        <tr>
+          <td class="td-key">Terbium (Tb)</td>
+          <td>—</td>
+          <td class="td-pct">80% (with thermal pre-treat)</td>
+          <td class="td-pct">80% (15% without pre-treat)</td>
+          <td class="td-val">~$4,029/kg</td>
+          <td>Scarce; structural global shortage 2025–2030+</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout">
+    <strong>Key Finding:</strong> Thermal pre-treatment is the single most impactful process upgrade for fluorescent lamp recycling. Without it, terbium recovery is only ~15%. With appropriate pre-treatment (KOH fusion or 400–700°C heating), it improves to 80%. At $4,029/kg for Tb, this 65-percentage-point improvement represents massive revenue uplift — approximately $2,620 per kilogram of terbium unlocked.
+  </div>
+
+  <h2 class="prose">Yttrium Market Intelligence</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr><th>Metric</th><th>Value</th><th>Note</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-key">Yttrium Oxide Market Size 2024</td><td class="td-val">~$4.13Bn</td><td>Growth Market Reports; projected $7.09Bn by 2033</td></tr>
+        <tr><td class="td-key">Yttrium spot price (ref)</td><td class="td-val">~$96/kg</td><td>Wikipedia chemical element prices 2025; 50x price spike risk from China controls</td></tr>
+        <tr><td class="td-key">China export control (Apr 2025)</td><td class="td-val">ACTIVE</td><td>Yttrium explicitly included; 45-day review process required</td></tr>
+        <tr><td class="td-key">Primary REE content in phosphor</td><td class="td-pct">~27.9%</td><td>Total REE oxide content of lamp phosphor powder</td></tr>
+        <tr><td class="td-key">Fluorescent lamp phosphor stockpile</td><td>~25,000 t</td><td>Global estimate of REE-containing phosphor waste</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 06 — Ni-MH BATTERIES ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div class="section-meta">
+      <span class="section-tag">Battery Recycling</span>
+      <div class="section-title">La, Ce, Nd &amp; Pr from Nickel-Metal Hydride Batteries</div>
+      <div class="section-subtitle">NiMH batteries contain 8–33% rare earths in the anode alloy — a high-concentration secondary source</div>
+    </div>
+  </div>
+
+  <div class="card-grid card-grid-3" style="margin-bottom:28px;">
+    <div class="card accent-card">
+      <div class="card-label">REE Content in NiMH Anode Alloy</div>
+      <div class="card-value">~33 wt%</div>
+      <div class="card-desc">La ~21%, Ce ~6.5%, Nd ~3%, Pr ~2%; AB5-type alloy (LaCePrNdNiCoMnAl)</div>
+    </div>
+    <div class="card">
+      <div class="card-label">Whole-Battery REE Content</div>
+      <div class="card-value">8–17.3 wt%</div>
+      <div class="card-desc">"7% of a typical NiMH" (Recycling International); "17.3% REE" in full battery characterisation studies — higher end confirms excellent concentration</div>
+    </div>
+    <div class="card blue-card">
+      <div class="card-label">Lanthanum Market (REE)</div>
+      <div class="card-value">~$2/kg</div>
+      <div class="card-desc">Inexpensive but high volume; Ce ~$2/kg; the value is in neodymium and praseodymium at $245 and $100/kg respectively</div>
+    </div>
+  </div>
+
+  <h2 class="prose">NiMH Battery — The Hidden REE Reservoir</h2>
+  <p class="prose">Nickel-metal hydride batteries were the dominant rechargeable battery chemistry in hybrid electric vehicles (Toyota Prius, Honda Insight) and millions of consumer devices from the 1990s through the 2010s. As lithium-ion batteries continue displacing NiMH, a massive wave of spent NiMH batteries is entering the waste stream. Each HEV battery pack contains approximately 3.5 kg of rare earth elements — predominantly lanthanum, cerium, praseodymium, and neodymium in the hydrogen-absorbing anode alloy.</p>
+
+  <p class="prose">Despite this, over 90% of NiMH battery REEs are currently discarded in landfills or lost as oxide slag when batteries are processed in steelmaking furnaces (where REEs report to slag rather than to the valuable nickel-cobalt alloy). The current industrial approach — adding NiMH batteries to stainless steel feedstock as a cheap nickel source — recovers the nickel but wastes the REEs entirely.</p>
+
+  <div class="callout callout-green">
+    <strong>Gap = Opportunity:</strong> More than 90% of REEs in end-of-life NiMH batteries are currently lost. At typical REE concentrations of 8–17 wt% and current prices for Nd ($245/kg) and Pr ($100/kg), a dedicated NiMH REE recovery line processing 10,000 tonnes of battery black mass per year could yield $18–35M in REE value alone — on top of the nickel and cobalt value.
+  </div>
+
+  <h2 class="prose">NiMH Anode Alloy — Detailed REE Composition</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Content in AB5 Anode Alloy (wt%)</th>
+          <th>Whole-Battery Content (wt%)</th>
+          <th>Best Leaching Efficiency</th>
+          <th>Overall Recovery</th>
+          <th>Spot Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Lanthanum (La)</td>
+          <td class="td-pct">~21 wt%</td>
+          <td class="td-pct">~7–10 wt%</td>
+          <td class="td-pct">90.85% (citric acid SWE)</td>
+          <td class="td-pct">90.2% overall</td>
+          <td class="td-val">~$2/kg</td>
+        </tr>
+        <tr>
+          <td class="td-key">Cerium (Ce)</td>
+          <td class="td-pct">~6.5 wt%</td>
+          <td class="td-pct">~2–4 wt%</td>
+          <td class="td-pct">88.84% (citric acid SWE)</td>
+          <td class="td-pct">87.8% overall</td>
+          <td class="td-val">~$2/kg</td>
+        </tr>
+        <tr>
+          <td class="td-key">Neodymium (Nd)</td>
+          <td class="td-pct">~3 wt%</td>
+          <td class="td-pct">~1–2 wt%</td>
+          <td class="td-pct">90.85% (citric acid SWE)</td>
+          <td class="td-pct">89.8% overall</td>
+          <td class="td-val">~$245/kg</td>
+        </tr>
+        <tr>
+          <td class="td-key">Praseodymium (Pr)</td>
+          <td class="td-pct">~2 wt%</td>
+          <td class="td-pct">~0.5–1 wt%</td>
+          <td class="td-pct">~90% (parallel to Nd)</td>
+          <td class="td-pct">~88%</td>
+          <td class="td-val">~$100/kg</td>
+        </tr>
+        <tr>
+          <td class="td-key">Nickel (Ni)</td>
+          <td class="td-pct">~45–64 wt% alloy</td>
+          <td class="td-pct">36–42 wt% battery</td>
+          <td class="td-pct">90.70% (citric acid SWE)</td>
+          <td class="td-pct">~90%</td>
+          <td>~$17,500/t</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:11px;color:var(--muted);margin-top:4px;">SWE = Subcritical Water Extraction using 2.0 N citric acid, 150°C, 5 min. ABS = Aqueous Biphasic System. REE precipitation with dilute H₃PO₄: 99.3% La, 98.8% Ce, 99.0% Nd precipitated from leach solution.</p>
+
+  <div class="process-box">
+    <h3>NiMH Battery REE Recovery — Integrated Process</h3>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-n">01</div>
+        <div class="step-title">Cryogenic Pre-treatment</div>
+        <div class="step-detail">Liquid N₂ freezing for deactivation; brittle fracture for HEV modules</div>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <div class="step-title">Mechanical Separation</div>
+        <div class="step-detail">Magnetic separation removes steel casing; sieving produces 87% "black mass" suitable for further processing</div>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <div class="step-title">Thermal Treatment</div>
+        <div class="step-detail">600–800°C removes organic separator; further classifies Ni-rich negative electrode</div>
+      </div>
+      <div class="step">
+        <div class="step-n">04</div>
+        <div class="step-title">Leaching</div>
+        <div class="step-detail">Subcritical water + 2N citric acid at 150°C, 5 min: ~90% La, Ce, Nd, Ni into solution. Alternative: HNO₃ or HCl leach</div>
+      </div>
+      <div class="step">
+        <div class="step-n">05</div>
+        <div class="step-title">REE/Ni Separation</div>
+        <div class="step-detail">ABS process (Pluronic L35 + thiocyanate): removes Fe, Mn, Co; La, Ce, Ni remain. Second ABS stage separates La/Ce from Ni</div>
+      </div>
+      <div class="step">
+        <div class="step-n">06</div>
+        <div class="step-title">Individual REE SX</div>
+        <div class="step-detail">Solvent extraction with EHEHPA / D2EHPA separates La, Ce, Nd, Pr individually; precipitation as phosphates or oxalates</div>
+      </div>
+      <div class="step">
+        <div class="step-n">07</div>
+        <div class="step-title">Calcination</div>
+        <div class="step-detail">REE oxalates/hydroxides calcined to oxides; La₂O₃ at 94.2% purity per kg of black mass; Nd₂O₃ and Pr₆O₁₁ also recovered</div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="prose">Lanthanum — The Most Abundant NiMH REE</h2>
+  <div class="callout callout-blue">
+    <strong>La Recovery Benchmark:</strong> An optimised ABS process recovers 62.7 g of lanthanum per kg of NiMH battery black mass at 94.2% purity. This means a 10,000 t/year black mass facility recovers approximately 627 tonnes of La — worth ~$1.25M at current prices, but with growing demand in fluid catalytic cracking (FCC) catalysts, optical glass, and hydrogen storage applications.
+  </div>
+
+  <div class="data-table-wrap" style="margin-top:24px;">
+    <table>
+      <thead>
+        <tr><th>Recovery Metric</th><th>La</th><th>Ce</th><th>Nd</th><th>Pr</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Content in AB5 alloy (wt%)</td>
+          <td class="td-pct">~21%</td>
+          <td class="td-pct">~6.5%</td>
+          <td class="td-pct">~3%</td>
+          <td class="td-pct">~2%</td>
+        </tr>
+        <tr>
+          <td class="td-key">Leach efficiency (citric acid SWE)</td>
+          <td class="td-pct">90.85%</td>
+          <td class="td-pct">88.84%</td>
+          <td class="td-pct">90.85%</td>
+          <td class="td-pct">~90%</td>
+        </tr>
+        <tr>
+          <td class="td-key">Precipitation efficiency</td>
+          <td class="td-pct">99.3%</td>
+          <td class="td-pct">98.8%</td>
+          <td class="td-pct">99.0%</td>
+          <td class="td-pct">~99%</td>
+        </tr>
+        <tr>
+          <td class="td-key">Overall combined recovery</td>
+          <td class="td-pct">90.2%</td>
+          <td class="td-pct">87.8%</td>
+          <td class="td-pct">89.8%</td>
+          <td class="td-pct">~88%</td>
+        </tr>
+        <tr>
+          <td class="td-key">Current spot price/kg</td>
+          <td class="td-val">~$2</td>
+          <td class="td-val">~$2</td>
+          <td class="td-val">~$245</td>
+          <td class="td-val">~$100</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 07 — COMPETITORS ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <div class="section-meta">
+      <span class="section-tag">Competitive Intelligence</span>
+      <div class="section-title">Asia-Pacific Competitor Landscape</div>
+      <div class="section-subtitle">Who is already doing this — and where the gaps remain</div>
+    </div>
+  </div>
+
+  <div class="callout callout-blue" style="margin-bottom:28px;">
+    <strong>Asia-Pacific dominates:</strong> The region accounts for over 92% of global REE market share (2025), anchored by China's integrated mining-separation-magnet complex. Japan is the world's most advanced urban mining ecosystem. South Korea is accelerating. India is nascent — representing the highest-upside entry point.
+  </div>
+
+  <h2 class="prose">China — The Dominant Force</h2>
+  <div class="card-grid card-grid-2" style="margin-bottom:20px;">
+    <div class="comp-card">
+      <div class="comp-name">Shenghe Resources Holdings Co., Ltd.</div>
+      <div class="comp-country">🇨🇳 China — Listed (SH: 600392)</div>
+      <div class="comp-focus">Primary REE mining and processing; growing recycling operations. One of China's Big 6 state-backed REE groups. Processes NdFeB magnet scrap and NiMH battery black mass. Integrated supply chain from mine to separated oxides.</div>
+      <div><span class="tag tag-red">MAGNETS</span><span class="tag tag-purple">Ni-MH</span><span class="tag tag-blue">PRIMARY MINE</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">GanZhou QianDong Rare Earths Group</div>
+      <div class="comp-country">🇨🇳 China (Jiangxi Province)</div>
+      <div class="comp-focus">Jiangxi ion-adsorption clay REE mining — the world's premier source of heavy REEs (Dy, Tb, Gd, Ho). Processing capacity for HREE separation. State-controlled; produces separated Dy, Tb, Y oxides from both primary ores and secondary feeds.</div>
+      <div><span class="tag tag-red">HEAVY REE</span><span class="tag tag-red">Dy / Tb / Y</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Jiangsu Huahong Technology Co., Ltd.</div>
+      <div class="comp-country">🇨🇳 China</div>
+      <div class="comp-focus">E-waste recycling and REE recovery; processes NdFeB magnet scrap and consumer electronics. Key player in China's domestic REE recycling ecosystem. Benefits from preferential feedstock access via China's e-waste collection mandates.</div>
+      <div><span class="tag tag-green">E-WASTE</span><span class="tag tag-purple">Nd/Pr RECOVERY</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Yunnan Tin Group</div>
+      <div class="comp-country">🇨🇳 China</div>
+      <div class="comp-focus">World's largest tin producer (85,000 t in 2024). Growing secondary tin operations from e-waste. Expanded secondary tin output +14.9% in 2024. Primary target for tin vapour capture benchmarking.</div>
+      <div><span class="tag tag-blue">TIN</span><span class="tag tag-green">SECONDARY</span></div>
+    </div>
+  </div>
+
+  <h2 class="prose">Japan — World's Most Advanced Urban Mining Ecosystem</h2>
+  <div class="card-grid card-grid-2" style="margin-bottom:20px;">
+    <div class="comp-card">
+      <div class="comp-name">Hitachi Metals / Proterial</div>
+      <div class="comp-country">🇯🇵 Japan</div>
+      <div class="comp-focus">Pioneer in NdFeB magnet recycling R&D since 2010. Part of the 2026 Daikin consortium for commercial AC compressor magnet recovery loop. AI-driven robotic disassembly for compressor motors targeting 10,000 units/year by 2027. Shin-Etsu Chemical processes recovered material into new magnets.</div>
+      <div><span class="tag tag-red">NdFeB MAGNETS</span><span class="tag tag-blue">ROBOTIC SX</span></div>
+      <div class="mkt-bar"><div class="mkt-bar-fill" style="width:72%;"></div></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Mitsubishi Materials / Mitsubishi Chemical</div>
+      <div class="comp-country">🇯🇵 Japan</div>
+      <div class="comp-focus">Partnership with ReElement Technologies (US) for EV battery and magnet REE processing. Invested in solvents-based precious metals and copper recovery (DescycleTech, 2025). JOGMEC-funded HREE recycling facility in France (Caremag SAS joint venture with Iwatani).</div>
+      <div><span class="tag tag-purple">EV BATTERIES</span><span class="tag tag-green">HREE</span><span class="tag tag-blue">GLOBAL PARTNERSHIPS</span></div>
+      <div class="mkt-bar"><div class="mkt-bar-fill" style="width:65%;"></div></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Shin-Etsu Chemical</div>
+      <div class="comp-country">🇯🇵 Japan</div>
+      <div class="comp-focus">One of Japan's largest NdFeB magnet manufacturers. End-point of the Daikin-Hitachi compressor magnet loop. Processes recycled REE material back into new sintered NdFeB magnets — the first truly closed-loop commercial magnet recycling chain in Asia-Pacific.</div>
+      <div><span class="tag tag-red">CLOSED-LOOP MAGNETS</span></div>
+      <div class="mkt-bar"><div class="mkt-bar-fill" style="width:80%;"></div></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Tokyo Eco Recycle + Itochu (with ERI)</div>
+      <div class="comp-country">🇯🇵 Japan</div>
+      <div class="comp-focus">Consumer e-waste automation with AI image recognition for component-level magnet extraction. Itochu expanding urban mining to Southeast Asia for appliance collection (2024 Nikkei report). JOGMEC administers ¥37.9 billion ($238M) FY2026 budget for Japan's urban mining programme.</div>
+      <div><span class="tag tag-green">E-WASTE AUTOMATION</span><span class="tag tag-purple">URBAN MINING</span></div>
+      <div class="mkt-bar"><div class="mkt-bar-fill" style="width:55%;"></div></div>
+    </div>
+  </div>
+
+  <div class="callout">
+    <strong>Japan's Kyoto University Breakthrough (SEEE Process):</strong> Selective Extraction–Evaporation–Electrolysis achieves <strong>96% neodymium recovery</strong> and <strong>91% dysprosium recovery</strong> at above 90% purity from consumer magnets in a single-stage process — the highest-efficiency lab-proven REE separation from magnets yet demonstrated. Commercial scale-up targeted by 2027.
+  </div>
+
+  <h2 class="prose">South Korea &amp; Australia — Rising Challengers</h2>
+  <div class="card-grid card-grid-2" style="margin-bottom:20px;">
+    <div class="comp-card">
+      <div class="comp-name">Korea Institute of Industrial Economics &amp; MOTIE</div>
+      <div class="comp-country">🇰🇷 South Korea (Government + Industry)</div>
+      <div class="comp-focus">South Korea's Rare Metals Supply Plan 2.0 targets reducing China REE dependence from 70% to 50% by 2030. 33 critical minerals identified; 5 REEs designated "strategic". Government recycling subsidies active. Samsung and LG supply chains driving EV magnet recycling demand. Korea imported $640M of rare magnets in 2022 — significant feedstock for recycling.</div>
+      <div><span class="tag tag-blue">GOVERNMENT-LED</span><span class="tag tag-red">MAGNET RECYCLING</span></div>
+    </div>
+    <div class="comp-card">
+      <div class="comp-name">Lynas Rare Earths</div>
+      <div class="comp-country">🇦🇺 Australia (operations in Malaysia)</div>
+      <div class="comp-focus">Only significant non-Chinese producer of separated NdPr at scale. Malaysian facility (Kuantan) processes Mt Weld ore. In June 2024 announced Dy/Tb production from heavy rare earth separation at Malaysian plant by 2025. Licensed for 10 more years in Malaysia. Japan–France Caremag partnership for HREE recycling. Processing up to 1,500 t/yr of mixed HREE compound (Sm, Eu, Gd, Ho, Dy, Tb).</div>
+      <div><span class="tag tag-green">Dy / Tb PRODUCTION</span><span class="tag tag-blue">NON-CHINA SUPPLY</span></div>
+      <div class="mkt-bar"><div class="mkt-bar-fill" style="width:60%;"></div></div>
+    </div>
+  </div>
+
+  <h2 class="prose">Comprehensive Competitor Summary Table</h2>
+  <div class="comp-table">
+    <div class="data-table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Country</th>
+            <th>Primary Focus</th>
+            <th>REEs Targeted</th>
+            <th>Source Stream</th>
+            <th>Scale / Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="td-key">Shenghe Resources</td>
+            <td>China</td>
+            <td>Mining + recycling</td>
+            <td>Nd, Pr, Dy, Tb</td>
+            <td>Magnets, primary ore</td>
+            <td>Industrial; state-backed</td>
+          </tr>
+          <tr>
+            <td class="td-key">GanZhou QianDong</td>
+            <td>China</td>
+            <td>Heavy REE mining</td>
+            <td>Dy, Tb, Gd, Y</td>
+            <td>Ion-adsorption clay</td>
+            <td>Industrial; HREE dominant</td>
+          </tr>
+          <tr>
+            <td class="td-key">Jiangsu Huahong</td>
+            <td>China</td>
+            <td>E-waste REE recycling</td>
+            <td>Nd, Pr, Dy</td>
+            <td>NdFeB scrap, e-waste</td>
+            <td>Industrial recycler</td>
+          </tr>
+          <tr>
+            <td class="td-key">Hitachi Metals</td>
+            <td>Japan</td>
+            <td>Magnet recycling</td>
+            <td>Nd, Dy, Pr</td>
+            <td>NdFeB magnets, WEEE</td>
+            <td>Commercial (2027 scale-up)</td>
+          </tr>
+          <tr>
+            <td class="td-key">Shin-Etsu Chemical</td>
+            <td>Japan</td>
+            <td>Magnet mfg + recycling</td>
+            <td>Nd, Pr, Dy</td>
+            <td>Closed-loop NdFeB</td>
+            <td>Commercial (2027 loop)</td>
+          </tr>
+          <tr>
+            <td class="td-key">Mitsubishi Chemical</td>
+            <td>Japan</td>
+            <td>REE separation + refining</td>
+            <td>Multiple LREEs + HREEs</td>
+            <td>EV batteries, magnets</td>
+            <td>Pilot / growing</td>
+          </tr>
+          <tr>
+            <td class="td-key">Lynas Rare Earths</td>
+            <td>Australia/Malaysia</td>
+            <td>Mining + separation</td>
+            <td>Nd, Pr, Dy, Tb</td>
+            <td>Primary ore + HREE SX</td>
+            <td>Industrial; 1,500 t/yr HREE</td>
+          </tr>
+          <tr>
+            <td class="td-key">JOGMEC (Japan Gov.)</td>
+            <td>Japan</td>
+            <td>Urban mining admin</td>
+            <td>All REEs</td>
+            <td>EV motors, appliances</td>
+            <td>$238M FY2026 investment</td>
+          </tr>
+          <tr>
+            <td class="td-key">Umicore (Belgium, APAC ops)</td>
+            <td>Belgium / Korea ops</td>
+            <td>Battery recycling</td>
+            <td>La, Ce, Nd, Pr (NiMH)</td>
+            <td>Ni-MH batteries</td>
+            <td>Commercial (UHT process)</td>
+          </tr>
+          <tr>
+            <td class="td-key">Malaysia Smelting Corp</td>
+            <td>Malaysia</td>
+            <td>Tin smelting</td>
+            <td>Tin (secondary)</td>
+            <td>E-waste solders</td>
+            <td>Industrial; major APAC tin recycler</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════ SECTION 08 — MARKET DATA SUMMARY ══════════════ -->
+<div class="section-divider"></div>
+<div class="page">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <div class="section-meta">
+      <span class="section-tag">Pricing &amp; Market Intelligence</span>
+      <div class="section-title">Element Market Values &amp; Sizing — Master Reference</div>
+      <div class="section-subtitle">Current pricing, market volumes, and growth trajectory for each target element</div>
+    </div>
+  </div>
+
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Symbol</th>
+          <th>Type</th>
+          <th>Spot Price (Jun 2026)</th>
+          <th>Market Size (2025)</th>
+          <th>CAGR</th>
+          <th>Key Applications</th>
+          <th>Supply Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">Dysprosium</td>
+          <td>Dy</td>
+          <td><span class="tag tag-red">HEAVY REE</span></td>
+          <td class="td-val">$930.70/kg</td>
+          <td>$756.78M</td>
+          <td>5.8% → $1.12Bn (2032)</td>
+          <td>NdFeB magnet coercivity (EV, wind); nuclear control rods</td>
+          <td style="color:var(--accent);font-weight:600;">CRITICAL — China 90%+ monopoly</td>
+        </tr>
+        <tr>
+          <td class="td-key">Terbium</td>
+          <td>Tb</td>
+          <td><span class="tag tag-red">HEAVY REE</span></td>
+          <td class="td-val">$4,028.50/kg</td>
+          <td>Niche / Scarce</td>
+          <td>+503% since 2020</td>
+          <td>NdFeB magnets (high-temp); phosphors; fuel cells; fiber optics</td>
+          <td style="color:var(--accent);font-weight:600;">EXTREME — structural global shortage</td>
+        </tr>
+        <tr>
+          <td class="td-key">Yttrium</td>
+          <td>Y</td>
+          <td><span class="tag tag-red">HEAVY REE</span></td>
+          <td class="td-val">~$96/kg</td>
+          <td>$4.13Bn (YO market)</td>
+          <td>6.2% → $7.09Bn (2033)</td>
+          <td>Phosphors; lasers; YBCO superconductors; cancer treatment (Y-90); ceramics</td>
+          <td style="color:var(--gold);font-weight:600;">HIGH — China Apr 2025 export controls</td>
+        </tr>
+        <tr>
+          <td class="td-key">Europium</td>
+          <td>Eu</td>
+          <td><span class="tag tag-red">HEAVY REE</span></td>
+          <td class="td-val">~$1,600/kg</td>
+          <td>Niche</td>
+          <td>Growing (OLED)</td>
+          <td>Red phosphors; OLED emitters; Euro banknote security (UV fluorescence)</td>
+          <td style="color:var(--gold);font-weight:600;">HIGH — China controls; limited deposits</td>
+        </tr>
+        <tr>
+          <td class="td-key">Neodymium</td>
+          <td>Nd</td>
+          <td><span class="tag tag-blue">LIGHT REE</span></td>
+          <td class="td-val">~$245/kg</td>
+          <td>~$2.1Bn (30.3% share)</td>
+          <td>CAGR ~10%+ (EV-driven)</td>
+          <td>NdFeB permanent magnets; EV traction motors; wind turbines; HDDs</td>
+          <td style="color:var(--gold);font-weight:600;">HIGH — +64% YTD due to export controls</td>
+        </tr>
+        <tr>
+          <td class="td-key">Praseodymium</td>
+          <td>Pr</td>
+          <td><span class="tag tag-blue">LIGHT REE</span></td>
+          <td class="td-val">~$100/kg</td>
+          <td>Part of NdPr ~$2.8Bn</td>
+          <td>Strong growth with Nd</td>
+          <td>NdFeB magnets; specialty glass (aircraft windshields); Pr-doped ceramics</td>
+          <td style="color:var(--gold);font-weight:600;">HIGH — NdPr prices +40% YTD (late 2025)</td>
+        </tr>
+        <tr>
+          <td class="td-key">Lanthanum</td>
+          <td>La</td>
+          <td><span class="tag tag-blue">LIGHT REE</span></td>
+          <td class="td-val">~$2/kg</td>
+          <td>Moderate volume</td>
+          <td>Stable</td>
+          <td>NiMH battery anode alloy; FCC catalysts; optical glass; hydrogen storage</td>
+          <td style="color:var(--accent3);font-weight:600;">MODERATE — abundant but China-processed</td>
+        </tr>
+        <tr>
+          <td class="td-key">Cerium</td>
+          <td>Ce</td>
+          <td><span class="tag tag-blue">LIGHT REE</span></td>
+          <td class="td-val">~$2/kg</td>
+          <td>$188M (polishing) + catalysts</td>
+          <td>8.1% CAGR (polishing)</td>
+          <td>Glass polishing; FCC catalysts; auto catalytic converters; UV-resistant glass</td>
+          <td style="color:var(--accent3);font-weight:600;">MODERATE — most abundant REE; oversupply risk</td>
+        </tr>
+        <tr>
+          <td class="td-key">Tin</td>
+          <td>Sn</td>
+          <td><span class="tag tag-green">BASE METAL</span></td>
+          <td class="td-val">~$31,000/t</td>
+          <td>Large — $6–8Bn</td>
+          <td>Steady; solder growth with EVs</td>
+          <td>Solder (51% of tin); tinplate; tin chemicals; bronze alloys</td>
+          <td style="color:var(--accent3);font-weight:600;">MODERATE — geopolitically exposed (Indonesia, Myanmar)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 class="prose" style="margin-top:40px;">Price Performance — 2020 to Jun 2026</h2>
+  <div class="bar-chart">
+    <div class="bar-row">
+      <div class="bar-label">Terbium (Tb)</div>
+      <div class="bar-track"><div class="bar-fill" style="width:100%;background:var(--accent);"></div></div>
+      <div class="bar-num" style="color:var(--accent);">+503%</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Neodymium (Nd)</div>
+      <div class="bar-track"><div class="bar-fill" style="width:75%;background:var(--accent2);"></div></div>
+      <div class="bar-num" style="color:var(--accent2);">+277%</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Dysprosium (Dy)</div>
+      <div class="bar-track"><div class="bar-fill" style="width:55%;background:var(--accent3);"></div></div>
+      <div class="bar-num" style="color:var(--accent3);">+170%</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Praseodymium (Pr)</div>
+      <div class="bar-track"><div class="bar-fill" style="width:35%;background:var(--gold);"></div></div>
+      <div class="bar-num" style="color:var(--gold);">~+120%</div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Yttrium (Y)</div>
+      <div class="bar-track"><div class="bar-fill" style="width:20%;background:var(--accent4);"></div></div>
+      <div class="bar-num" style="color:var(--accent4);">+50x risk</div>
+    </div>
+  </div>
+  <p style="font-size:11px;color:var(--muted);">Sources: Strategic Metals Invest (Dy, Tb, Nd real-time prices); Wikipedia chemical element prices (reference); Fastmarkets (NdPr); market analyst consensus. All figures as of June 2026.</p>
+
+  <h2 class="prose" style="margin-top:40px;">Strategic Prioritisation Matrix</h2>
+  <div class="data-table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Source Stream</th>
+          <th>Target REEs</th>
+          <th>Value Density ($/kg magnet)</th>
+          <th>Technical Difficulty</th>
+          <th>Recommended Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="td-key">NdFeB Magnets (EV/Wind grade)</td>
+          <td>Nd, Dy, Pr, Tb</td>
+          <td class="td-val">$120–280/kg magnet</td>
+          <td>Medium</td>
+          <td><span class="tag tag-red">PRIORITY 1 — Highest value density</span></td>
+        </tr>
+        <tr>
+          <td class="td-key">Fluorescent Lamp Phosphors</td>
+          <td>Y, Eu, Tb</td>
+          <td class="td-val">$80–160/kg phosphor</td>
+          <td>High (green phase)</td>
+          <td><span class="tag tag-red">PRIORITY 1 — Terbium price surge</span></td>
+        </tr>
+        <tr>
+          <td class="td-key">Ni-MH Batteries (HEV packs)</td>
+          <td>La, Ce, Nd, Pr</td>
+          <td class="td-val">$15–45/kg black mass</td>
+          <td>Medium</td>
+          <td><span class="tag tag-blue">PRIORITY 2 — High volume + Nd/Pr value</span></td>
+        </tr>
+        <tr>
+          <td class="td-key">NdFeB Magnets (HDD/Consumer)</td>
+          <td>Nd, Pr, Dy</td>
+          <td class="td-val">$40–90/kg magnet</td>
+          <td>Low–Medium</td>
+          <td><span class="tag tag-blue">PRIORITY 2 — Volume play</span></td>
+        </tr>
+        <tr>
+          <td class="td-key">Tin-Coated Copper (PCBs)</td>
+          <td>Sn</td>
+          <td class="td-val">$900–1,500/t PCB (Sn fraction)</td>
+          <td>Low</td>
+          <td><span class="tag tag-green">PRIORITY 3 — Complementary to Cu smelting</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<div class="report-footer">
+  <p>URBAN MINING &amp; SECONDARY REE RECOVERY — STRATEGIC RESEARCH REPORT · JUNE 2026</p>
+  <p style="margin-top:8px;">Data sourced from: Fastmarkets, Strategic Metals Invest, USGS, McKinsey Global Institute, ScienceDirect peer-reviewed literature, International Tin Association, JOGMEC, market research analysts (Straits Research, Grand Research Store, MarketsandMarkets, ReAnIn, Growth Market Reports). Prices as of June 2026; subject to high volatility.</p>
+  <p style="margin-top:8px;">CONFIDENTIAL · FOR INTERNAL STRATEGIC USE ONLY</p>
+</div>
+
+</body>
+</html>
